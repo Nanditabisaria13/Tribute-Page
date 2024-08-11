@@ -1,0 +1,478 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+.container{
+    position: relative;
+    width: 100%;
+}
+
+.name{
+    width: 100%;
+    background: #000;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2vw;
+    padding: 1rem 1rem;
+}
+
+.name h1{
+    font-size: 3vw;
+    font-weight: 700;
+    text-align: center;
+    color:orangered;
+}
+
+.name p{
+    font-size: 1.3vw;
+    font-weight: 700;
+    text-align: center;
+    color: white;
+}
+
+.heroimage{
+
+    width: 100%;
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-bottom: 1px solid grey;
+    background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUTxxByCL9xgnHuqr2EpqUDcqlYNMD-xTIig&s');
+    background-size: cover;
+     background-repeat: no-repeat; 
+}
+
+
+.heroimage .quote{
+       flex-basis: 40%;
+       padding: 1rem 4rem;
+       border: 5px solid #eee;
+}
+
+.quote p{
+    font-size: 3.5vw;
+    font-weight: 700;
+    line-height: 4rem;
+    color: white;
+}
+
+.quote span{
+    color: rgba(0, 0, 0, 0.719);
+}
+
+.heroimage image{
+    flex-basis: 50%;
+    padding: 1rem 2rem;
+
+}
+
+.image img{
+    height: 30vw;
+    width: 30vw;
+    border-radius: 15px;
+}
+
+.image h1{
+    font-size: 3.5vw;
+    font-weight: 700;
+    line-height: 4vw;
+    color: white; 
+    text-align: center;
+}
+
+.timeline{
+   width: 100%;
+   background:linear-gradient(#000,#000000e0) ;
+
+}
+
+.timeline .heading{
+    text-align: center;
+}
+
+.heading h1{
+    font-size: 3rem;
+    font-weight: 700;
+    color: white;
+    padding-top: 4rem;
+
+}
+
+.heading span{
+    padding: 0 0.5rem;
+    background-color: orangered;
+    color: #000;
+}
+
+.timeline-desc{
+    width: 100%;
+}
+
+.time-desc{
+    flex-basis: 45%;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 2rem;
+}
+
+.time-desc h1{
+    font-size: 3rem;
+    color: white;
+    font-weight: 800;
+    padding: 0.5rem 0.5rem;
+    background: orangered;
+}
+
+
+.time-desc p{
+    font-size: 1.3rem;
+    font-weight: 300;
+    color: gray;
+}
+
+.qualities{
+    width: 100%;
+    padding: 3rem 1rem;
+    background-color: #000000ec;
+    display: flex;
+    flex-direction: column;
+    gap: 3vw;
+}
+
+.qualities h1{
+    font-size: 3rem;
+    font-weight: 700;
+    color: white;
+    text-align: center;   
+}
+
+.qualities h1 span{
+    padding: 0 0.5rem;
+    background-color: orangered;
+    color: #000;   
+}
+
+.qualitydiv{
+     width: 100%;
+     display: flex;
+     align-items: center;
+     justify-content: space-evenly;
+}
+
+.quality{
+    width: 30vw;
+   display: flex;
+   align-items: flex-start;
+   gap: 1vw;
+}
+
+.quality h1{
+    font-size: 5rem;
+    font-weight: 900;
+    color: orangered;
+}
+
+.qualityinfo{
+   margin-top: 2vw;
+   display: flex;
+   flex-direction: column;
+   gap: 1vw;
+}
+
+.qualityinfo h4{
+    font-size: 2rem;
+    font-weight: 600;
+    color: white; 
+} 
+
+.qualityinfo p{
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: rgb(59, 55, 55);
+    
+}
+
+.awards{
+    width: 100%;
+    border: 1px solid black;
+    padding: 4rem 1.5rem;
+    background-color: #000000f8;
+}
+
+.awards h1{
+    font-size: 3rem;
+    font-weight: 700;
+    color:white;
+    margin: 1rem 1rem;
+    text-align: center;
+}
+
+.awards span{
+    width: 100%;
+    padding: 0 0.5rem;
+    background-color: orangered;
+    color: black;
+}
+
+.awarddiv{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+     gap: 3vw;
+   margin-top: 3rem;
+}
+
+.awardinfo{
+    height: 30vw;
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.awardinfo:hover{
+    scale: 1.1;
+    
+}
+
+.awardinfo img{
+    height: 20vw;
+    width: 20vw;
+    border: 5px solid white;
+}
+
+.awardinfo h4{
+    width: 90%;
+    font-size: 1.7vw;
+    font-weight: 600;
+    color: orangered;
+    text-align: center;
+}
+
+.awardinfo p{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color:#eee ;
+}
+
+.knowmore{
+    width: 100%;
+    padding: 3rem 1rem;
+    background-color: orangered;
+}
+
+.knowmore h1{
+    font-size: 3rem;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+}
+
+.knowmore p{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color:black;
+    text-align: center;
+    margin-top: 1vw;
+}
+
+.knowmore a{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: black;
+}
+
+
+@media (max-width:900px){
+    .heroimage{
+      min-height: 60vh;
+    }
+
+      .name p{
+        font-size: 1.1rem;
+      }
+
+      .name h1{
+        font-size: 3.5vw;
+    }
+
+      .time-desc p{
+        font-size: 1.1rem;
+    }
+
+    .awardinfo h4{
+        font-size: 1.8vw;
+    }
+}
+
+@media (max-width:700px){
+    .name p{
+      font-size: 1rem;
+    }
+
+    .name h1{
+        font-size: 4vw;
+    }
+
+
+   .quote p{
+    font-size: 1.5rem;
+}
+
+.heroimage .quote{
+    flex-basis: 40%;
+    padding: 1rem 1rem;
+    border: 5px solid #eee;
+}
+
+.image img{
+    height: 40vw;
+    width: 40vw;
+    border-radius: 15px;
+}
+
+.image h1{
+    font-size: 4vw;
+
+}
+
+ .time-desc p{
+      font-size: 1rem;
+  }
+
+  .qualityinfo p{
+    font-size: 1.1rem;
+}
+
+.qualityinfo h4{
+    font-size: 1.6rem;
+}
+
+.awarddiv{
+    grid-template-columns: repeat(2,1fr);
+     gap: 3vw;
+   padding: 0 1rem;
+}
+
+.awardinfo{
+    height: 45vw;
+    width: 40vw;
+}
+
+.awardinfo img{
+    height: 30vw;
+    width: 30vw;
+}
+  .awardinfo h4{
+      font-size: 2.5vw;
+  }
+
+  .knowmore h1{
+    font-size: 2rem;
+  }
+  
+
+}
+
+@media (max-width:500px){
+
+    .name h1{
+        font-size: 5vw;
+    }
+
+
+   .quote p{
+    font-size: 2rem;
+}
+ 
+  .heroimage{
+    flex-direction: column-reverse;
+    padding: 1rem 1rem;
+  }
+
+.heroimage .quote{
+    flex-basis: 20%;
+    padding: 0.5rem 0.5rem;
+    border: 5px solid #eee;
+    margin: 1rem 1rem;
+}
+
+.image img{
+    height: 50vw;
+    width: 50vw;
+    border-radius: 15px;
+}
+
+.image h1{
+    font-size: 4vw;
+
+}
+
+ .time-desc p{
+      font-size: 1rem;
+  }
+
+ .quality{
+    width: 80vw;
+    gap: 3vw;
+ }
+
+  .qualitydiv{
+    flex-direction: column;
+       align-items: flex-start;
+       gap: 4vw;
+  }
+
+  .qualityinfo p{
+    font-size: 1.3rem;
+}
+
+.qualityinfo h4{
+    font-size: 2rem;
+}
+
+.awarddiv{
+    grid-template-columns: repeat(1,1fr);
+     gap: 7vw;
+   padding: 0 10vw;
+}
+
+.awardinfo{
+    height: 65vw;
+    width: 60vw;
+}
+
+.awardinfo img{
+    height: 50vw;
+    width: 60vw;
+}
+  .awardinfo h4{
+      font-size: 4vw;
+  }
+
+  .awardinfo p{
+    font-size: 5vw;
+     }
+
+  .knowmore h1{
+    font-size: 2rem;
+  }
+
+  .knowmore p{
+   font-size: 1.3rem;
+  }
+  
+
+}
+
